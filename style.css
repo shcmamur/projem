@@ -1,6 +1,75 @@
-.deneme 
-{
-	height:300px;
-	width:500px;
-	background-color: green;
+.duzelt {
+  clear:both;
+}
+
+/* Site içeriğini ortalıyor ve genel boyutu belirtiyoruz. */    
+#ortala {
+  margin: 0 auto;
+  width:800px;
+}
+
+/* Üst kısmın sabitlenmesi ve diğer ayarlayını yapıyoruz. */
+#header {
+  margin-top:-10px;
+  margin-left:-10px;
+  margin-right: -10px;
+  background-color: #000;
+  height: 50px;
+  color: #FFF;
+}
+
+/* Sol içeriği sola dayıyoruz. */
+#left {
+  margin-top: 10px;
+  width: 615px;
+  float: left;
+}
+
+/* Sağ içeriğide sağa dayıyoruz. */
+#right {
+  margin-top:10px;
+  float: right;
+  width: 185px;
+}
+#slider {
+  background-color: #000;
+  height: 100px;
+  color: #FFF;
+  width: 610px;
+}
+.icerik {
+  float: left;
+  margin-top: 10px;
+  background: #000;
+  margin-right: 5px;
+  height: 100px;
+  width: 200px;
+  color: #FFF;
+  height: 100px;
+  width: 375px;
+}
+.konu {
+  margin-top: 10px;
+  width: 610px;
+  height: 150px;
+  background-color: #000;
+  color: #FFF;
+}
+.widgets {
+  margin-bottom: 10px;
+  background: #000;
+  height: 150px;
+  width: 175px;
+  color: #FFF;
+}
+
+/* Son olarak alt kısmı sabitliyor ve boyutlandırıyoruz. */
+#footer {
+  margin-top: 100px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  background-color: #000;
+  height: 50px;
+  color: #FFF;
 }
