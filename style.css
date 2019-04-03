@@ -1,9 +1,10 @@
-.duzelt {
+﻿.duzelt {
   clear:both;
 }
 /* Site içeriğini ortalıyor ve genel boyutu belirtiyoruz. */    
 #ortala {
   margin-top: 10px;
+  margint-left: 10px;
   width: 600px;
   float: left;
 }
