@@ -4,44 +4,94 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <!-- İlk başta üst kısmı oluşturduk -->
-    <br>
-    <div id="header">Başlık</div>
-    <div id="header">
-
-          <div class="icerik">Anasayfa</div>
-          <div class="icerik">Hakkımızda</div>
-          <div class="icerik">S.S.S.</div>
-          <div class="icerik">Gizlilik</div>
-          <div class="icerik">İletişim</div>
-    </div>
-        <br><br><br><br><br><br><br>
-
-    <!-- Sağ ve sol kısmıda yerleştirdik, CSS'den yönlerini belirticez -->
-          <div id="slider"><h2>Banner</h2>
-          </div>
-
-
-    <div id="ortala">
-      <div id="header2">Başlık 2 <br>
-          <div class="konu"><img src="resimler/a.jpg" width="200" height="300">Konu1</div>
-          <div class="konu"><img src="resimler/b.jpg" width="200" height="300">Konu2</div>
-          <div class="konu"><img src="resimler/c.jpg" width="200" height="300">Konu3</div>
-          <div class="konu"><img src="resimler/d.jpg" width="200" height="300">Konu4</div>
-          <div class="konu"><img src="resimler/e.jpg" width="200" height="300">Konu5</div>
-          <div class="konu"><img src="resimler/f.jpg" width="200" height="300">Konu6</div><br>
-          <div class="konu"><img src="resimler/g.jpg" width="200" height="300">Konu1</div>
-          <div class="konu"><img src="resimler/h.jpg" width="200" height="300">Konu2</div>
-          <div class="konu"><img src="resimler/ı.jpg" width="200" height="300">Konu3</div>
-          <div class="konu"><img src="resimler/i.jpg" width="200" height="300">Konu4</div>
-          <div class="konu"><img src="resimler/j.jpg" width="200" height="300">Konu5</div>
-          <div class="konu"><img src="resimler/k.jpg" width="200" height="300">Konu6</div>
+    <div id = "container_index">
+    <div id = "headaer"><!-- header açılış -->
+    <div id = "logo"><!-- logo açılış -->
+      <img id="r_logo" src="" alt="logo">
+      <a href="index.html"><img src="" width="" height="">
+      <div id = "baglanti"></a>
+        <a href="#"><img src="" width="" height=""></a>
+        <a href="#"><img src="" width="" height=""></a>
+        <a href="#"><img src="" width="" height=""></a>
       </div>
-    </div>
-    <!-- Son olarak alt kısmıda ekledik, burada sorun oluşmaması için CSS'de kod ekliycez -->
-    <div class="duzelt"></div>
-    <div id="footer">AltBilgi</div>
-    
+</div><!-- logo bitiş -->
+</div><!-- header bitiş -->
 
+<div id = "menu"><!-- menü açılış -->
+  <a href="index.html">Anasayfa</a>
+  <a href="">Hediyeler</a>
+  <a href="">Hakkımızda</a>
+  <a href="">S.S.S</a>
+  <a href="">İletişim</a>
+<input type="text" maxlength="20" placeholder="Hediyenizi arayınız">
+<input type="submit" value="Ara">
+</div><!-- Menünün Bitişi -->
+<div id = "banner">
+  <img src="" width="270" height="220">
+  <a href="#">Küçük Kar Küreleri</a>
+    <hr>
+    <p>19,90 TL</p>
+</div> <!-- hediye bitişi -->
+<!-- hediye 2 -->
+ <div class="hediye">
+      <img src="resim/hediye2.jpg" width="270" height="220">
+      <a href="#">Atlı Karınca Müzik Kutusu </a>
+        <hr> 
+      <p>30,00 TL </p>
+  </div><!--hediye2 bitiş--->
+    
+    <!-- hediye3 -->
+    <div class="hediye">
+      <img src="resim/hediye3.jpg" width="270" height="220">
+      <a href="#">Kupa Bardağı</a>
+        <hr>
+      <p>19,90 TL</p>
+  </div><!--hediye3 bitiş--->
+    
+    <!-- hediye4 -->
+    <div class="hediye_ilk">
+      <img src="resim/hediye4.jpg" width="270" height="220">
+      <a href="#">Işıklı USB Bellek</a>
+        <hr>
+      <p>30,00 TL</p>
+  </div><!--hediye4 bitiş--->
+    
+    <!-- hediye5 -->
+    <div class="hediye">
+      <img src="resim/hediye5.jpg" width="270" height="220" alt=""/>
+      <a href="#">Küçük Çam Ağacı</a>
+        <hr>
+      <p>19,90 TL</p>
+  </div><!--hediye5 bitiş--->
+    
+    <!-- hediye6 -->
+    <div class="hediye">
+      <img src="resim/hediye6.jpg" width="270" height="220" alt=""/>
+      <a href="#">Yılbaşı Duvar Saati</a>
+        <hr>
+      <p>30,00 TL</p>
+  </div><!--hediye6 bitiş--->
+    
+</div><!--hediyeler bitiş--->
+
+</div><!---- container bitiş--->  
+
+<div id="footer">
+    <div id="footer_sol">
+      <form method="post" action="#">
+        <b><u>Görüşlerinizi Bildirin</u></b><br>
+        Adınız: <input type="text" name="adiniz" maxlength="20"/><br>
+        Soyadınız: <input type="text" name="soyadiniz" maxlength="20"/><br>
+        <textarea placeholder="Sayfa hakkındaki görüşleriniz..."></textarea>
+        <input type="submit" name="gonder" value="Gönder"/>
+        </form>
+    </div>
+    
+    <div id="footer_sag">
+      <img src="resim/a.png" width="170" height="200"/><br>
+        <p1>Süheyl Can Mamur/p1><br>
+        <p2>Sitenin Kurucusu</p2>
+    </div>
+</div>
   </body>
 </html>
