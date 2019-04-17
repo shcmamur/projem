@@ -1,82 +1,394 @@
-﻿.duzelt {
-  clear:both;
-}
-/* Site içeriğini ortalıyor ve genel boyutu belirtiyoruz. */    
-#ortala {
-  margin-top: 10px;
-  margint-left: 10px;
-  width: 600px;
-  float: left;
+﻿#container
+{
+width:1280px;
+height:1250px;
+border:1px solid black;
+margin:0 auto; 
+background:linear-gradient(#FFF, #CCC);
 }
 
-/* Üst kısmın sabitlenmesi ve diğer ayarlayını yapıyoruz. */
-#header {
-  background-color: #000;
-  height: 80px;
-  color: white;
-  width: 1500px;
-  margin-left: 10%;
-  margin-right:10%;
-
+#container_index
+{
+width:1280px;
+height:1300px;
+border:1px solid black;
+margin:0 auto; 
+background-color: #607fc6;
 }
 
-/* Sol içeriği sola dayıyoruz. */
-#header2 {
-  background-color: #3346E8;
-  color: white;
-  margin-top: 10px;
-  width: 1500px;
-  height: 700px;
-  float: left;
-  text-align: center;
+#container_all
+{
+width:1280px;
+height:2750px;
+border:1px solid black;
+margin:0 auto; 
+background:linear-gradient(#FFF, #CCC);
 }
 
-/* Sağ içeriğide sağa dayıyoruz. */
-#right {
+#header
+{
+width:1280px; 
+height:250px;
+margin:0 auto;
+}
+
+#logo
+{
+  margin-left:-85px;
+  width:1160px;margin:0
+  auto;
+}
+#baglanti{
+  width:130px;
+  float:right;
   margin-top:10px;
-  float: right;
-  width: 185px;
-}
-#slider {
-  background-color: #000;
-  height: 200px;
-  color: #FFF;
-  width: 1500px;
-}
-.icerik {
-  float: left;
-  margin-top: 10px;
-  background: #3346E8;
-  margin-right: 5px;
-  height: 100px;
-  width: 295px;
-
-}
-.konu {
-  float: left;
-  margin-top: 10px;
-  background: #000;
-  margin-right: 5px;
-  height: 300px;
-  width: 200px;
-  color: #FFF;
-  margin-left: 30px;
-}
-.widgets {
-  margin-bottom: 10px;
-  background: #000;
-  height: 150px;
-  width: 175px;
-  color: #FFF;
+  float:right;
 }
 
-/* Son olarak alt kısmı sabitliyor ve boyutlandırıyoruz. */
-#footer {
-  margin-top: 5px;
-  background-color: #000;
-  height: 50px;
-  width: 1500px;
-  color: #FFF;
+#r_logo
+{
+  float:left;
+}
+#hd_logo 
+{
+  float:left;
+  margin-left:10px;
+  margin-top:50px;
 }
 
+#menu
+{
+  width:1150px;
+  margin:0 auto;
+  height:60px;
+  background-color: #5465FF;
+}
+#menu a
+{
+  width:120px;
+  background-color: #4BEBD9;
+  line-height:60px;
+  text-decoration:none;
+  color:white;
+  padding:13px;
+ }
+#menu a:hover
+{
+     background:#488CE8;
+ }
+ 
 
+#menu input[type="text"]
+{
+    opacity:0.8;
+    margin-left:300px;
+    
+}
+ #banner
+ {
+  margin-left:64px;
+  margin-top:40px; 
+}
+  #hediyeler 
+  {margin:0 auto;
+    width:1150px;
+    height:800px;
+    border:1px solid transparent;
+    font-family:"Arial";
+  }
+  #yazi 
+  {
+    margin-top:10px;
+    font-size:40px; 
+    color:#45E733;
+    font-weight:bold;
+    text-align:center;
+    text-shadow:-2px -2px 2px #666,
+    2px -2px 2px #666, -2px 2px 2px #666,2px 2px 2px #666;
+  }
+  #hediyeler hr 
+  {
+    width:270px;
+    border-color:#F00;
+    border-width:2px;
+  }
+  
+  .hediye_ilk 
+  {
+    background:linear-gradient(#FFF, #999);
+    clear:left;
+    border-radius:10px;
+    float:left;
+    display:block;
+    width:290px;
+    height:320px;
+    margin:50px 0 0 75px;
+    border:solid #000 2px;
+    text-align:center;
+  }
+  .hediye_ilk:hover 
+  {
+    border-color:#999;
+  }
+  .hediye_ilk img
+  {
+    margin:10px auto 0 auto;
+  }
+  .hediye_ilk a
+  {
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    color:hsla(0,93%,53%,0.95);}
+  .hediye_ilk a:hover 
+  {
+    color:#000;
+  }
+  .hediye_ilk p
+  {
+    font-size:22px;
+    margin-top:0px;
+  }
+  .hediye_ilk p1
+  {
+    font-size:15px;
+  }
+  
+  .hediye
+  {
+    background:linear-gradient(#FFF, #999);
+    border-radius:10px;
+    float:left;
+    display:block;
+    width:290px;
+    height:320px;
+    margin:50px 0 0 60px;
+    border:solid #000 2px;
+    text-align:center;
+  }
+  .hediye:hover
+  {
+    border-color:#999;
+  }
+  .hediye img
+  {
+    margin:10px auto 0 auto;
+  }
+  .hediye a
+  {
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    color:hsla(0,93%,53%,0.95);
+  }
+  .hediye a:hover
+  {
+    color:#000;
+  }
+  .hediye p
+  {
+    font-size:22px;
+    margin-top:0px;
+  }
+  .hediye p1
+  {
+    font-size:15px;
+  }
+  
+  #footer
+  {
+    margin:10px auto 0 auto;
+    width:1280px;
+    height:300px;
+    border:solid 1px #000;
+    background:#CCC;
+  }
+  #footer_sol 
+  {
+    width:500px;
+    float:left; 
+  font-family:"Arial";
+  font-size:20px;
+}
+  #footer input
+  {
+    margin-top:5px;
+    font-size:18px;
+    border:solid #F00
+    2px; outline:none;
+    border-radius:5px;
+    width:200px;
+    height:30px;
+    background:#FFF;
+  }
+  #footer input:focus 
+  {
+    border-color:#222;
+    background:#CCC;
+  }
+  #footer_sol textarea 
+  {
+    margin-top:5px;
+    font-size:18px;
+    width:500px;
+    height:100px;
+    resize:none;
+    background:#FFF;
+    border-radius:5px;
+   border:solid #F00 2px;
+   outline:none;}
+  #footer_sol textarea:focus 
+  {
+    border-color:#222;
+    background:#CCC;
+  }
+  #footer_sol form 
+  {
+    margin:15px 0 0 30px;
+  }
+  #footer_sol input[type="submit"] 
+  {width:200px;
+   height:50px;
+ }
+  #footer_sag
+   {font-family:"Arial"; 
+   width:500px;
+  float:right;
+   text-align:center;
+   }
+  #footer_sag img 
+  {
+    margin-top:20px; 
+    margin-left:100px;
+    border:solid #000 2px;
+    border-radius:10px;
+  }
+  #footer_sag p1 
+  {
+    margin-left:100px;
+    font-size:25px;
+    font-weight:bold;
+  }
+  #footer_sag p2
+  {
+    margin-left:100px;
+    font-size:20px;
+  }
+  
+#kategori 
+{
+  width:665px;
+  height:55px;
+}
+#kategori ul 
+{
+  border-top:solid #000 1px;
+  margin:0;
+  margin-left:65px;
+  padding:0;
+  list-style:none;
+  text-align:center;
+}
+#kategori ul li 
+{
+  float:left;
+  padding:0;
+}
+#kategori ul li a 
+{
+  display:block;
+  width:200px;
+  height:50px;
+  background:#AE2FBB;
+  color:#FFF;
+  text-decoration:none;
+}
+#kategori ul li a:hover 
+{
+  background:#9B29A6;
+}
+#kategori ul h 
+{
+  position:relative;
+  top:10px;
+  font-family:"Arial";
+  font-size:20px;
+}
+#kategori ul #li_son
+{
+  border-radius:0 0 25px 0;
+}
+
+#hakkimizda
+{
+  margin:50px auto 0 auto;
+  border:solid #000 2px;
+  background:linear-gradient(#FFF, #999);
+  border-radius:10px; width:1000px; height:800px;
+  font-family:"Arial"; 
+  font-weight:bold; color:hsla(0,93%,53%,0.95);
+}
+#hakkimizda1 
+{
+  float:left;
+  width:490px;
+  height:790px;
+  font-size:15px;
+}
+#hakkimizda2 
+{
+  float:right;
+  width:490px;
+  height:790px;
+  font-size:20px;
+}
+
+#hakkimizda input[type="text"] 
+{
+  width:200px;
+  height:25px;
+  font-size:20px;
+}
+#hakkimizda input[name="tel1"] 
+{
+  width:50px;
+  height:25px;
+  font-size:20px;
+}
+#hakkimizda input[name="tel2"] 
+{
+  width:50px;
+  height:25px;
+  font-size:20px;
+}
+#hakkimizda input[name="tel3"] 
+{
+  width:100px;
+  height:25px;
+  font-size:20px;
+}
+#hakkimizda input[type="submit"]
+{
+  width:100px;
+  height:25px;
+  background:#CCC;
+  border:solid 1px #000;
+}
+
+#mobil_app 
+{text-decoration:none;
+  display:block;
+  margin:10px auto;
+   border:solid #000 2px;
+   background:#999; border-radius:5px;
+   width:1000px;
+   height:90px; font-family:"Arial";
+   font-weight:bold;
+   color:#000;
+   font-size:25px;
+   text-align:center;
+ }
+#mobil_app:hover 
+{
+  background:#FFF;
+}
