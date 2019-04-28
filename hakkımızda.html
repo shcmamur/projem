@@ -2,6 +2,84 @@
 <html>
   <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+  var snowsrc="resimler/kar.png"
+
+  var no = 10;
+
+  var hidesnowtime = 0;
+
+  var snowdistance = "pageheight";
+
+
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+  function iecompattest(){
+  return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+  }
+  var dx, xp, yp;   
+  var am, stx, sty;  
+  var i, doc_width = 800, doc_height = 600; 
+  
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+  }
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  snowsrc=(snowsrc.indexOf("http://www.webkodu.com")!=-1)? "http://www.webkodu.com/kod-kaynak/wk-kar-efekt-2.png" : snowsrc
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;                       
+    xp[i] = Math.random()*(doc_width-50);  
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;        
+    stx[i] = 0.02 + Math.random()/10; // set step variables
+    sty[i] = 0.7 + Math.random();    
+    if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://www.webkodu.com\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      }
+    }
+  }
+  function snowIE_NS6() { 
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+    doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+    for (i = 0; i < no; ++ i) {  
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    }
+    snowtimer=setTimeout("snowIE_NS6()", 10);
+  }
+  function hidesnow(){
+    if (window.snowtimer) clearTimeout(snowtimer)
+    for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
+  }
+    
+if (ie4up||ns6up){
+    snowIE_NS6();
+    if (hidesnowtime>0)
+    setTimeout("hidesnow()", hidesnowtime*1000)
+    }
+</script>
   </head>
   <body>
     <div id = "container_index">
@@ -28,32 +106,25 @@
 </div><!-- Menünün Bitişi -->
 
   <div id = "hakkında"><!-- hakkında açılış -->
-  <h2>FİRMA ADI : Hediye Diyarı İnt. Hizmetleri San. Ve Dış Tic. LTD. ŞTİ.</h2>
-  <h3>ADRES : A Mahallesi B Caddesi C Sokak D Apartman No:8 D:8</h3>
-  <h3>TELEFON : (0000) 000 00 00 </h3>
-  <h3> E-POSTA  : hediye-diyari@hotmail.com </h3>
-  <h3> BANKA ADI : Garanti Bankası</h3>
-  <h3> HESAP ADI  : Hediye Diyarı int. hizm. san. ve dış tic. ltd. şti</h3>
-  <h3> HESAP NO : Şube kodu: 286  Hesap no: 6296571 </h3>
-  <h3> IBAN NO  : TR00 0000 0000 0860 0000 0000 00 </h3>
-    <form method="post">
-      <p>Sorularınızı Bildirin </p>
-          <p>Adınız:<br><input type="text"/></p>
-            <p>Soyadınız:<br><input type="text"/></p>
-            <p>E-Posta Adresiniz:<br><input type="text"/></p>
-            <p>Telefonunuz:<br>+90 <input type="text" name="tel1" /> <input type="text" name="tel2"/> <input type="text" name="tel3"/></p>
-            <p><input type="checkbox" name="ggp"/> Gizlilik ve Güvenlik Politikasını<br>
-            Okudum, Kabul Ediyorum.</p>
-            <p><input type="submit" value="GÖNDER"/></p>
-            </form>
-  <div style="background-image: url("resimler/para.gif")" >
-
-    
-  </div><!-- --><br><br><br><br><br>
-  <div id="banner">
+  <h2>FİRMA ADI : Hediye Diyarı İnt. Hizmetleri San. Ve Dış Tic. LTD. ŞTİ.</h2><br><br><br>
+  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3><br><br><br>
+  <h3>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3><br><br><br><br><br><br><br><br><br><br>
+   <div id="banner">
       <a href="index.html">
    <img src="resimler/banner.jpg" width="1150" height="500" alt=""/></a>
   </div><!---banner bitiş--->
+  </div><!-- Hakkında kapanış --><br><br><br><br><br>
+  
   </div><!-- hakkında bitiş -->
 </div><!---- container bitiş--->  
 <br><br>

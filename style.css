@@ -1,4 +1,7 @@
-﻿#container
+﻿body{
+  background:url(resimler/arkaplan.png);
+}
+#container
 {
 width:1280px;
 height:1250px;
@@ -13,7 +16,6 @@ width:1280px;
 height:1700px;
 border:1px solid black;
 margin:0 auto; 
-background-color: #607fc6;
 }
 
 #container_all
@@ -61,12 +63,12 @@ margin:0 auto;
   width:1150px;
   margin:0 auto;
   height:60px;
-  background-color: #5465FF;
+  background-color: #1c1c1c;
 }
 #menu a
 {
   width:120px;
-  background-color: #4BEBD9;
+  background-color: #778899;
   line-height:60px;
   text-decoration:none;
   color:white;
@@ -99,7 +101,7 @@ margin:0 auto;
   {
     margin-top:10px;
     font-size:40px; 
-    color:#45E733;
+    color:white;
     font-weight:bold;
     text-align:center;
     text-shadow:-2px -2px 2px #666,
@@ -114,7 +116,7 @@ margin:0 auto;
   
   .hediye_ilk 
   {
-    background: #488CE8;
+    background: #778899;
     clear:left;
     float:left;
     display:block;
@@ -155,7 +157,7 @@ margin:0 auto;
   
   .hediye
   {
-    background:#488CE8;
+    background:#778899;
     float:left;
     display:block;
     width:290px;
@@ -199,7 +201,7 @@ margin:0 auto;
     width:1280px;
     height:300px;
     border:solid 1px #000;
-    background:#607fc6;
+    background: #808080;
   }
   #footer_sol 
   {
